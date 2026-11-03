@@ -1,0 +1,10 @@
+/build/
+/dist/
+/.venv/
+__pycache__/
+*.py[cod]
+/backups/
+/previews/
+*.log
+*.psd
+.DS_Store
