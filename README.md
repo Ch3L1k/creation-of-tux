@@ -4,7 +4,7 @@
 figures from Michelangelo's *Creation of Adam*. Real-time GPU rendering,
 subtle character shimmer and stable eyes — no video loop or browser runtime.
 
-By **4EL1k** · [Русская инструкция](docs/README.ru.md)
+By **Ch3L1k** · [Русская инструкция](docs/README.ru.md)
 
 ![Creation of Tux preview](docs/preview.png)
 
@@ -165,7 +165,7 @@ Wayland session and are documented in [testing notes](docs/TESTING.md).
 
 ## Credits and license
 
-Original code: MIT, **4EL1k**. Artwork and protocol/font components have separate
+Original code: MIT, **Ch3L1k**. Artwork and protocol/font components have separate
 attributions — see [THIRD_PARTY.md](THIRD_PARTY.md) and [LICENSES](LICENSES).
 Developed with AI coding assistance; image frames are procedural ASCII, not
 image-model output. No accounts, telemetry, credentials or network connection

@@ -2,7 +2,7 @@
 
 ## Original project
 
-Composition and project direction: **4EL1k**. Rendering, packaging and controls
+Composition and project direction: **Ch3L1k**. Rendering, packaging and controls
 were developed with AI coding assistance. The images are rendered by actual
 ASCII glyphs in a GPU shader, rather than generated video or image-model frames.
 Original code is MIT-licensed; this does not relicense third-party artwork.
@@ -11,7 +11,7 @@ Original code is MIT-licensed; this does not relicense third-party artwork.
 
 Adapted from **The Creation of Adam**, Michelangelo (1475–1564), c. 1508–1512.
 The underlying painting is public-domain historical artwork. The supplied local
-composition was made by 4EL1k from a reproduction, cutting out the two figures
+composition was made by Ch3L1k from a reproduction, cutting out the two figures
 and placing them around Tux; the original PSD is not needed or distributed.
 Reference: https://commons.wikimedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1n.jpg
 This reference identifies the painting; the exact source download URL of the

@@ -28,7 +28,7 @@ def show():
             box.append(picture)
             title=Gtk.Label(label='Creation of Tux',xalign=0)
             title.add_css_class('title-1');box.append(title)
-            box.append(Gtk.Label(label='Live ASCII · Wayland · by 4EL1k',xalign=0))
+            box.append(Gtk.Label(label='Live ASCII · Wayland · by Ch3L1k',xalign=0))
             status=Gtk.Label(xalign=0,wrap=True)
             box.append(status)
             def row(label,widget):
