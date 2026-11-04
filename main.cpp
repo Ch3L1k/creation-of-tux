@@ -70,7 +70,8 @@ vec4 sampleScene(vec2 p,out float tuxMask){
    vec4 t=texture2D(tux,clamp(texcoord,vec2(.001),vec2(.999)));
    if(t.a>.22){
     float side=1.-smoothstep(.10,.135,abs(q.z));
-    float light=.82+.15*cs-.10*sn;
+    // Light both painted faces equally; keep shading as the silhouette turns.
+    float light=.82+.15*abs(cs)-.10*sn*cs;
     // The side is the material of the cut-out, not a squeezed copy of its face.
     float frontPaint=smoothstep(.12,.48,abs(cs))*(1.-side);
     float gold=step(.22,t.r-t.b)*step(.22,t.g);

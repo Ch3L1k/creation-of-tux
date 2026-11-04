@@ -26,6 +26,13 @@ edge=frames[2][300:800,720:1200,:3]
 front_ink=np.count_nonzero(front.max(axis=2)>35)
 edge_ink=np.count_nonzero(edge.max(axis=2)>35)
 assert 100<edge_ink<front_ink*.55, (front_ink,edge_ink)
+# Both painted faces should retain comparable brightness after a half turn.
+# Average over the whole center crop so changed glyph density counts as dimming.
+back=frames[3][300:800,720:1200,:3]
+weights=np.array([.2126,.7152,.0722])
+ratio=float((back @ weights).mean()/(front @ weights).mean())
+print(f'Back/front luminance: {ratio:.3f}')
+assert .90 < ratio < 1.10, f'Back face brightness differs: {ratio:.3f}'
 path=preview/'shimmer.png'
 subprocess.run([str(root/'build/creation-ascii'),'--time','3','--snapshot',str(path)],check=True)
 shimmer=np.asarray(Image.open(path))
